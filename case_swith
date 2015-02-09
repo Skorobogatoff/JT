@@ -1,0 +1,101 @@
+/*function chose(){
+
+    var year = prompt('Какой сейчас год?');
+
+    if (year < 2015){
+    alert('Рановато');
+    }
+    else if(year > 2015){
+        alert('Поздновато')
+    }
+    else{
+        alert('Да, ты угадал!')
+    }
+}
+
+function  admin_log(){
+
+    var adminka = prompt('You Login:');
+
+    if(adminka == 'admin'){
+
+    var password = prompt('Enter password:');
+
+    if ( password == 'adminka')
+    {
+        alert('Добро пожаловать!');
+    }
+    else
+    {
+        alert('Wrong password!');
+    }
+
+    }
+    else if(adminka != 'admin')
+    {
+            alert('Wrong login!')
+    }
+    else
+    {
+        alert('I dont know you!')
+    }
+}
+
+function log(){
+
+    var message;
+    var login;
+
+    if( login == 'prepod'){
+        message = 'Hi!'}
+    else if (login == 'boss'){
+        message = 'Hello!'}
+    else if (login == 'student'){
+        message =  'Yoo!'}
+    else{
+        message = ' ';
+    }
+}
+
+function ca_sw(){
+
+    var a = 100 + 500;
+
+     switch(a){
+     case 600:
+     alert('Swich_case сработал')
+     break;
+          case 700:
+          alert('нет')
+          break;
+               case 500:
+               alert('нет')
+               break;
+     default:
+        alert('Таких чисел нет!');
+     }
+}
+*/
+function sw_ca()
+{
+    var arg = prompt('Enter number:')
+
+    switch(arg){
+    case '1':
+    alert('one');
+
+    case '2':
+    alert('two');
+    break;
+
+    case '5':
+    alert('non');
+
+    case null:
+    alert('cancel');
+
+    default:
+    alert('unknown number')
+    }
+
+}
