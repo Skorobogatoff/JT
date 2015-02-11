@@ -1,24 +1,43 @@
 var main = function(){
     $('.icon-menu').click(function()
         {
-        $('.menu').animate({
-            left: "0px"}, 300);
+        $('.menu').animate({left: "0px"}, 300);
 
-        $('body').animate({
-        left: "285px"},300);
+        $('body').animate({left: "100px"},300);
         });
 
     $('.icon-close').click(function()
     {
-        $('.menu').animate(
-        {
-            left: "-285px"
-        },300);
+        $('.menu').animate({left: "-290px"},300);
 
-        $('body').animate(
-        {
-            left: "0px"},300);
+        $('body').animate({left: "0px"},300);
     });
-
 }
- $(document).ready(main);
+$(document).ready(main);
+
+$(document).ready(function(){
+
+    $('#load_text').click(function(){
+               $('#loader').load('./text.html', function(){
+                   alert('Text is Done!')
+               });
+
+           });
+     $('#load_page').click(function(){
+                   $('#loader').load('./page.html', function(){
+                       alert('Page is Done!')
+                   });
+
+               });
+
+      $("#load_text").click(function() {
+               $(this).toggleClass('active');
+
+                });
+
+       $("#load_page").click(function() {
+                      $(this).toggleClass('active');
+                       });
+
+});
+
