@@ -1,0 +1,71 @@
+var main = function(){
+    $('.icon-menu').click(function()
+        {
+        $('.menu').animate({left: "0px"}, 300);
+
+        $('body').animate({left: "285px"},300);
+        });
+
+    $('.icon-close').click(function()
+    {
+        $('.menu').animate({left: "-285px"},300);
+
+        $('body').animate({left: "0px"},300);
+    });
+}
+$(document).ready(main);
+
+$(document).ready(function(){
+
+    $('#load_text').click(function(){
+               $('#loader').load('./text.html', function(){
+                   alert('Text is Done!')
+               });
+
+           });
+     $('#load_page').click(function(){
+                   $('#loader').load('./page.html', function(){
+                       alert('Page is Done!')
+                   });
+
+               });
+
+      $("#load_text").click(function() {
+               $(this).toggleClass('active');
+
+                });
+
+       $("#load_page").click(function() {
+                      $(this).toggleClass('active');
+                       });
+
+          $('.article').click(function() {
+            $('.article').removeClass('current');
+            $('.description').hide();
+
+            $(this).addClass('current');
+            $(this).children('.description').show();
+          });
+
+});
+
+    var posss = function(){
+
+    $('.btn').click(function(){
+
+      var element = $('.form-control').val();
+        $('<li>').text(element).appendTo('.posts');
+        $('.form-control').val('');
+        $('.number_post').text('150');
+    });
+
+    $('.form-control').keyup(function(){
+
+      var postLength = $('.form-control').val().length;
+      var charactersLeft = (150 - postLength);
+        $('.number_post').text(charactersLeft);
+
+     });
+
+}
+ $(document).ready(posss);
