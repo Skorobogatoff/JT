@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title>SlideShow</title>
+</head>
+<body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+        <div class="header">
+            <div class="container">
+                <a href="" class="logo">
+                    <img src="http://goo.gl/HqkHss">
+                </a>
+                    <ul class="menu">
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Web the apps</a></li>
+                        <li><a href="#">Magazine</a></li>
+                        <li><a href="#">Carees</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Support</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle">MENU
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">A</a></li>
+                                    <li><a href="#">B</a></li>
+                                    <li><a href="#">C</a></li>
+                                    <li><a href="#">D</a></li>
+                                    <li><a href="#">E</a></li>
+                                    <li><a href="#">F</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider active-slide">
+                <div class="container">
+                    <div class="rows">
+                        <div class="col-xs-5">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident</p>
+                            <ul class="app">
+                                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ios.png"></a></li>
+                                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/android.png"></a></li>
+                                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/windows.png"></a></li>
+                                <li><a href="#"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/blackberry.png"></a></li>
+                            </ul>
+                        </div>
+                     <div class="slide-copy col-xs-7">
+                         <img src="http://goo.gl/M8fgKl" width="700px">
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="#">
+                                <img src="" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navigator">
+            <a href="#" class="arrow-left"><img src="Strelka.png"></a>
+            <ul class="slider-dots">
+                <li class="dot"><a href="#">&bull;</a></li>
+                <li class="dot"><a href="#">&bull;</a></li>
+                <li class="dot"><a href="#">&bull;</a></li>
+                <li class="dot"><a href="#">&bull;</a></li>
+                <li class="dot"><a href="#">&bull;</a></li>
+            </ul>
+            <a href="#" class="arrow-right"><img src="http://goo.gl/X23hJm"></a>
+        </div>
+</body>
+</html>
