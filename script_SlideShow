@@ -2,6 +2,44 @@ var main = function(){
     $('.dropdown-toggle').click(function(){
         $('.dropdown-menu').toggle();
     });
+
+     $('.arrow-right').click(function(){
+            var currentSlide = $('.active');
+            var nextSlide = currentSlide.next();
+
+            var dotactive = $('.active-dot');
+            var nextDot = dotactive.next();
+
+        if(nextSlide.length === 0) {
+              nextSlide = $('.slide').first();
+              nextDot = $('.dot').first();
+            }
+
+            currentSlide.fadeOut(600).removeClass('active');
+            nextSlide.fadeIn(600).addClass('active');
+
+            dotactive.removeClass('active-dot');
+            nextDot.addClass('active-dot');
+            });
+
+    $('.arrow-left').click(function(){
+                var currentSlide = $('.active');
+                var prevSlide = currentSlide.next();
+
+                var dotactive = $('.active-dot');
+                var prevDot = dotactive.next();
+
+         if(prevSlide.length === 0) {
+                prevSlide = $('.slide').last();
+                prevDot = $('.dot').last();
+                }
+
+                currentSlide.fadeOut(600).removeClass('active');
+                prevSlide.fadeIn(600).addClass('active');
+
+                dotactive.removeClass('active-dot');
+                prevDot.addClass('active-dot');
+                });
 }
 
 $(document).ready(main);
